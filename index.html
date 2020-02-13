@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+  <meta name="description"
+    content="This is an example of a meta description. This will often show up in search results.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wingify </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/app.css" />
+</head>
+
+<body>
+  <div class="clip-bg"></div>
+  <div class="wrapper">
+    <div class="container">
+      <div class="my-row h-100">
+        <div class="my-col-5 text-white">
+          <div class="d-flex">
+            <div class="inner-content">
+              <h2>Sample Heading</h2>
+              <p>
+                In this example, we use the :focus selector to add a black border
+                color to the text field when it gets focused (clicked on):
+              </p>
+              <p>
+                Note that we have added the CSS transition property to animate the
+                border color (takes 0.5 seconds to change the color on focus).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="my-col-5 bg-white corner">
+          <form method="POST">
+            <label for="email">Enter your email</label>
+            <input type="text" id="email" name="email" />
+            <div id="error_email" class="tooltipcontactus w3-margin-bottom" style="display:none;">
+              <span class="tooltiptext">You Have To Write Valid Email Address.</span>
+            </div>
+            <label for="country">Date of birth (Optional)</label>
+
+            <div class="my-row">
+              <div class="my-col-3">
+                <label class="labelst">Date</label>
+                <select id="country" name="country">
+                  <option value="au">01</option>
+                  <option value="ca">02</option>
+                  <option value="usa">03</option>
+                </select>
+              </div>
+              <div class="my-col-6">
+                <label class="labelst">Month</label>
+                <select id="country" name="country">
+                  <option value="au">March</option>
+                  <option value="ca">April</option>
+                  <option value="usa">May</option>
+                </select>
+              </div>
+              <div class="my-col-6">
+                <label class="labelst">Year</label>
+                <select id="country" name="country">
+                  <option value="au">1995</option>
+                  <option value="ca">1996</option>
+                  <option value="usa">1997</option>
+                </select>
+              </div>
+            </div>
+
+
+            <label for="password">Choose a strong password</label>
+            <input type="text" id="password" name="password" />
+            <div id="PassValid" class="tooltipcontactus" style="display:none;">
+              <span class="tooltiptext">Password must have a numeric value and atleast 6 character</span>
+            </div>
+
+
+            <p>Are you an agency or individual</p>
+            <label for="radio-one">
+              <input type="radio" value="individual" name="radio" id="radio-one" />
+              <span>Individual</span>
+            </label>
+
+            <label for="radio-two">
+              <input type="radio" value="vgency" name="radio" id="radio-two" />
+              <span>Agency</span>
+            </label>
+
+            <button class="button" id="save">Submit</button>
+          </form>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>
